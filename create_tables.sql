@@ -5,6 +5,9 @@ DROP TABLE IF EXISTS csrankings;
 CREATE TABLE csrankings (
                             id INT AUTO_INCREMENT PRIMARY KEY,
                             name VARCHAR(255),
+                            first_name VARCHAR(255),
+                            middle_name VARCHAR(255),
+                            last_name VARCHAR(255),
                             affiliation VARCHAR(255),
                             homepage VARCHAR(255),
                             scholarid VARCHAR(50)
@@ -15,6 +18,9 @@ DROP TABLE IF EXISTS generated_author_info;
 CREATE TABLE generated_author_info (
                                        id INT AUTO_INCREMENT PRIMARY KEY,
                                        name VARCHAR(255),
+                                       first_name VARCHAR(255),
+                                       middle_name VARCHAR(255),
+                                       last_name VARCHAR(255),
                                        dept VARCHAR(255),
                                        area VARCHAR(50),
                                        count INT,
