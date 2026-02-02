@@ -78,5 +78,6 @@ print(duplicate_clusters.head(10))
 
 # Cleaned DataFrame with cluster IDs
 df_cleaned = df_cleaned.sort_values("id").groupby("cluster_id").first().reset_index()
+df_cleaned = df_cleaned.drop(columns=["cluster_id"])
 df_cleaned.to_csv("data/processed/csranking_cleaned_authors.csv", index=False)
 print("\nCleaned csranking table saved as 'data/processed/csranking_cleaned_authors.csv'.")
