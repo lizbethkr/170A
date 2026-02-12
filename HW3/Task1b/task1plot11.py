@@ -4,7 +4,7 @@ import seaborn as sns
 
 # import movie and ratings data
 movies = pd.read_csv("HW3/Task1a/movies.csv")
-ratings = pd.read_csv("HW3/Task 1b/ratings.csv")
+ratings = pd.read_csv("HW3/Task1b/ratings.csv")
 
 # split genres properly
 movies_genres = movies.assign(
